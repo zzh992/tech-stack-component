@@ -30,13 +30,13 @@ public class Struts2ExceptionInterceptor extends Struts2BaseController implement
 		try {
 			return invocation.invoke();
 		} catch (AuthorizationException e) {
-			log.error(e.getStackTrace().toString());
+			log.error(e.toString());
 			return "login";
 			//return operateError("服务异常，异常代码：" + e.getCode() + "，如有疑问，请联系管理员！");
 		} catch (Exception e) {
 			//ByteArrayOutputStream ostr = new ByteArrayOutputStream();
 			//e.printStackTrace(new PrintStream(ostr));
-			log.error(e.getStackTrace().toString());
+			log.error(e.toString());
 			return "login";
 			//return operateError("系统异常，请联系管理员！");
 		}
