@@ -11,24 +11,30 @@
 		<spring.version>4.1.7.RELEASE</spring.version>
 		<spring-data-jpa.version>1.9.0.RELEASE</spring-data-jpa.version>
 		<spring-data-commons.version>1.11.0.RELEASE</spring-data-commons.version>
+		<hibernate-jpa.version>1.0.0.Final</hibernate-jpa.version>
 		<shiro.version>1.2.4</shiro.version>
 		<mybatis.version>3.3.0</mybatis.version>
 		<mybatis-spring.version>1.2.3</mybatis-spring.version>
 		<struts2.version>2.3.24</struts2.version>
+		<aspectjweaver.version>1.8.7</aspectjweaver.version>
+		<cglib.version>3.1</cglib.version>
+		<guava.version>18.0</guava.version>
+		<commons-lang3.version>3.4</commons-lang3.version>
+		<commons-codec.version>1.10</commons-codec.version>
+		<dozer.version>5.5.1</dozer.version>
+		<logback-classic.version>1.1.3</logback-classic.version>
+		<javax.servlet-api.version>3.1.0</javax.servlet-api.version>
+		<javax.jsp-api.version>2.2.1-b03</javax.jsp-api.version>
+		<jstl.version>1.2</jstl.version>
+		<junit.version>4.12</junit.version>
+		<jetty-webapp.version>8.1.17.v20150415</jetty-webapp.version>
 	</properties>
 
 	<dependencies>
 		<dependency>
 			<groupId>org.eclipse.jetty.aggregate</groupId>
 			<artifactId>jetty-webapp</artifactId>
-			<version>8.1.16.v20140903</version>
-			<scope>provided</scope>
-		</dependency>
-
-		<dependency>
-			<groupId>org.apache.shiro</groupId>
-			<artifactId>shiro-spring</artifactId>
-			<version>${shiro.version}</version>
+			<version>${jetty-webapp.version}</version>
 			<scope>provided</scope>
 		</dependency>
 
@@ -70,7 +76,7 @@
 		<dependency>
 			<groupId>org.hibernate.javax.persistence</groupId>
 			<artifactId>hibernate-jpa-2.1-api</artifactId>
-			<version>1.0.0.Final</version>
+			<version>${hibernate-jpa.version}</version>
 			<scope>provided</scope>
 		</dependency>
 		
@@ -114,13 +120,13 @@
 		<dependency>
 			<groupId>org.aspectj</groupId>
 			<artifactId>aspectjweaver</artifactId>
-			<version>1.7.3</version>
+			<version>${aspectjweaver.version}</version>
 		</dependency>
 		
 		<dependency>
 			<groupId>cglib</groupId>
 			<artifactId>cglib</artifactId>
-			<version>2.2.2</version>
+			<version>${cglib.version}</version>
 		</dependency>
 
 		<!-- Guava工程包含了若干被Google的 Java项目广泛依赖 的核心库，例如：集合 [collections] 、缓存 [caching] 
@@ -129,20 +135,20 @@
 		<dependency>
 			<groupId>com.google.guava</groupId>
 			<artifactId>guava</artifactId>
-			<version>18.0</version>
+			<version>${guava.version}</version>
 		</dependency>
 
 
 		<dependency>
 			<groupId>org.apache.commons</groupId>
 			<artifactId>commons-lang3</artifactId>
-			<version>3.4</version>
+			<version>${commons-lang3.version}</version>
 		</dependency>
 
 		<dependency>
 			<groupId>commons-codec</groupId>
 			<artifactId>commons-codec</artifactId>
-			<version>1.8</version>
+			<version>${commons-codec.version}</version>
 		</dependency>
 
 		<!-- dozer是一种JavaBean的映射工具，类似于apache的BeanUtils。 但是dozer更强大，它可以灵活的处理复杂类型之间的映射。 
@@ -150,46 +156,46 @@
 		<dependency>
 			<groupId>net.sf.dozer</groupId>
 			<artifactId>dozer</artifactId>
-			<version>5.2.1</version>
+			<version>${dozer.version}</version>
 		</dependency>
 		
 		<!-- http://logback.qos.ch/manual/configuration.html -->
 		<dependency>
 			<groupId>ch.qos.logback</groupId>
 			<artifactId>logback-classic</artifactId>
-			<version>1.1.3</version>
+			<version>${logback-classic.version}</version>
 		</dependency>
 		
 		<!-- Servlet Dependency Begin -->
 		<dependency>
 			<groupId>javax.servlet</groupId>
 			<artifactId>javax.servlet-api</artifactId>
-			<version>3.1.0</version>
+			<version>${javax.servlet-api.version}</version>
 		</dependency>
 
 		<dependency>
 			<groupId>javax.servlet.jsp</groupId>
 			<artifactId>jsp-api</artifactId>
-			<version>2.2.1-b03</version>
+			<version>${javax.jsp-api.version}</version>
 		</dependency>
 		
 		<dependency>
 			<groupId>jstl</groupId>
 			<artifactId>jstl</artifactId>
-			<version>1.2</version>
+			<version>${jstl.version}</version>
 		</dependency>
 		<!-- Servlet Dependency End -->
 		
 		<dependency>
 			<groupId>org.apache.shiro</groupId>
 			<artifactId>shiro-spring</artifactId>
-			<version>1.2.3</version>
+			<version>${shiro.version}</version>
 		</dependency>
 		
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
-			<version>4.5</version>
+			<version>${junit.version}</version>
 			<scope>test</scope>
 		</dependency>
 
